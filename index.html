@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>CSS Color Reference</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Color Reference</h1>
+        <h6>The benefits and disadvantages between Color Name, Hex, RGBA, HSLA and HWB</h6>
+    </header>
+
+    <!-- Color Name Article -->
+    <article>
+        <h2>Color Name</h2>
+        <p>The first way to define a color for your website is through the use of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color_keywords" target="_blank" data-toggle="tooltip" title="Documentation on Color keywords.">Color Names</a>. These are simple words that will define the color used on the site. <br>The disadvantage to this method is the fact you are stuck with a predefined list of color names that you cannot add to.<br><br><strong>It's imporant to remember, all these colors can be accessed through the use of CSS keyword <em>color:</em> or <em>background-color:</em></strong><br><br><span><em>Examples below...</em></span></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Green</th>
+                    <th scope="col">Red</th>
+                    <th scope="col">Teal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>green;</td>
+                    <td>red;</td>
+                    <td>teal;</td>
+                </tr>
+                <tr>
+                    <td id="nameGreen"></td>
+                    <td id="nameRed"></td>
+                    <td id="nameTeal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <!-- HEX Article -->
+    <article>
+        <h2>HEX</h2>
+        <p>The second way to define a color for your website is through the use of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color" target="_blank" data-toggle="tooltip" title="Documentation on Hex-Color.">Hexadecimal Colors</a>. These are parameters that will define the color used on the site as specified using <strong>#RRGGBB</strong>. The integers range between <strong>00</strong> through to <strong>FF</strong> being the highest intensity. Another thing to remember is that if the color uses the same value for Red, Green or Blue, eg. <strong>#ff0000</strong> which gives us the color <strong>Red</strong>, we can shorten this to <strong>#f00</strong>.<br><br><strong>It's imporant to remember, all these colors can be accessed through the use of CSS keyword <em>color:</em> or <em>background-color:</em></strong><br><br><span><em>Examples below...</em></span></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Green</th>
+                    <th scope="col">Red</th>
+                    <th scope="col">Teal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#008000</td>
+                    <td>#ff0000 or #f00</td>
+                    <td>#008080</td>
+                </tr>
+                <tr>
+                    <td id="hexGreen"></td>
+                    <td id="hexRed"></td>
+                    <td id="hexTeal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <!-- RGBA Article -->
+    <article>
+        <h2>RGBA</h2>
+        <p>The third way to define a color for your website is through the use of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba" target="_blank" data-toggle="tooltip" title="Documentation on RGBA.">RGBA</a>. These are parameters that will define the color used on the site based on the amount of <strong>R</strong>ed, <strong>G</strong>reen and <strong>B</strong>lue light sources, with the intensity ranging from 0 (none) all the way to 255 (full). The <strong>A</strong>lpha , which ranges from 0.0-1.0 will specify the opacity for the chosen color, 0.0 being transparant and 1.0 being opaque. If not being used, we can omit the Alpha as in the examples below. This would represent a RGB color code.<br><br><strong>It's imporant to remember, all these colors can be accessed through the use of CSS keyword <em>color:</em> or <em>background-color:</em></strong><br><br><span><em>Examples below...</em></span></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Green</th>
+                    <th scope="col">Red</th>
+                    <th scope="col">Teal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rgb(0,128,0)</td>
+                    <td>rgb(255,0,0)</td>
+                    <td>rgb(0,128,128)</td>
+                </tr>
+                <tr>
+                    <td id="rgbaGreen"></td>
+                    <td id="rgbaRed"></td>
+                    <td id="rgbaTeal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <!-- HSLA Article -->
+    <article>
+        <h2>HSLA</h2>
+        <p>The fourth way to define a color for your website is through the use of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsla" target="_blank" data-toggle="tooltip" title="Documentation on HSLA.">HSLA</a>. These are parameters that will define the color used on the site based on the amount of <strong>H</strong>ue, <strong>S</strong>aturation and <strong>L</strong>ightness, with the Hue being an angle of the <a href="https://www.canva.com/colors/color-wheel/" target="_blank" data-toggle="tooltip" title="Article about Color Circle and Color Theory.">color circle</a> between 0 and 360 degrees. The Saturation and Lightness are percentages between saturated to grey and white to black. The <strong>A</strong>lpha , which ranges from 0.0-1.0 will specify the opacity for the chosen color, 0.0 being transparant and 1.0 being opaque. If not being used, we can omit the Alpha as in the examples below. This would represent a HSL color code.<br><br><strong>It's imporant to remember, all these colors can be accessed through the use of CSS keyword <em>color:</em> or <em>background-color:</em></strong><br><br><span><em>Examples below...</em></span></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Green</th>
+                    <th scope="col">Red</th>
+                    <th scope="col">Teal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>hsl(120, 100%, 25%)</td>
+                    <td>hsl(0, 100%, 50%)</td>
+                    <td>hsl(180, 100%, 25%)</td>
+                </tr>
+                <tr>
+                    <td id="hslGreen"></td>
+                    <td id="hslRed"></td>
+                    <td id="hslTeal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <!-- HWB Article -->
+    <article>
+        <h2>HWB</h2>
+        <p>The fifth way to define a color, which is currently not used, but suggested as the standard for CSS4 is <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb" target="_blank" data-toggle="tooltip" title="Documentation on HWB.">HWB</a>. These are parameters that will define the color used on the site based on the amount of <strong>H</strong>ue, <strong>W</strong>hiteness and <strong>B</strong>lackness, with the Hue being an angle of the color circle between 0 and 360 degrees. The Whiteness and Blackness are percentages.<br><br><strong>It's imporant to remember, all these colors can be accessed through the use of CSS keyword <em>color:</em> or <em>background-color:</em></strong><br><br><span><em>The examples below will not work yet, but are shown purely to show the syntax needed to use when HWB becomes available...</em></span></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Green</th>
+                    <th scope="col">Red</th>
+                    <th scope="col">Teal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>hwb(120, 0%, 50%)</td>
+                    <td>hwb(0, 0%, 0%)</td>
+                    <td>hwb(180, 0%, 50%)</td>
+                </tr>
+                <tr>
+                    <td id="hwbGreen"></td>
+                    <td id="hwbRed"></td>
+                    <td id="hwbTeal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <footer>
+        Created by Kevin Osborne.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

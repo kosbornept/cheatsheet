@@ -1,0 +1,145 @@
+/* Elements */
+
+body {
+    background-color: blanchedalmond;
+}
+
+h1, h2, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
+h6 {
+    font-size: 1.7rem;
+}
+
+p, span, footer {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+}
+
+strong {
+    font-size: 1.5rem;
+}
+
+span em {
+    font-size: 1rem;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    margin: 50px;
+    font-size: 4.5rem;
+}
+
+header h6 {
+    margin-bottom: 75px;
+}
+
+article {
+    margin: 50px 70px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5%;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+table.table {
+    table-layout: fixed;
+    width: 75%;
+    text-align: center;
+}
+
+table p {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+}
+
+/* Color Name */
+
+table.table tbody tr td#nameGreen {
+    background-color: green;
+}
+
+table.table tbody tr td#nameRed {
+    background-color: red;
+}
+
+table.table tbody tr td#nameTeal {
+    background-color: teal;
+}
+
+/* HEX Color */
+
+table.table tbody tr td#hexGreen {
+    background-color: #008000;
+}
+
+table.table tbody tr td#hexRed {
+    background-color: red;
+}
+
+table.table tbody tr td#hexTeal {
+    background-color: teal;
+}
+
+/* RGBA Color */
+
+table.table tbody tr td#rgbaGreen {
+    background-color: rgba(0, 128, 0);
+}
+
+table.table tbody tr td#rgbaRed {
+    background-color: rgba(255, 0, 0);
+}
+
+table.table tbody tr td#rgbaTeal {
+    background-color: rgba(0, 128, 128);
+}
+
+/* HSLA Color */
+
+table.table tbody tr td#hslGreen {
+    background-color: hsl(120, 100%, 25%);
+}
+
+table.table tbody tr td#hslRed {
+    background-color: hsl(0, 100%, 50%);
+}
+
+table.table tbody tr td#hslTeal {
+    background-color: hsl(180, 100%, 25%);
+}
+
+/* HWB Color */
+
+table.table tbody tr td#hwbGreen {
+    background-color: hwb(120, 0%, 50%);
+}
+
+table.table tbody tr td#hwbRed {
+    background-color: hwb(0, 0%, 0%);
+}
+
+table.table tbody tr td#hwbTeal {
+    background-color: hwb(180, 0%, 50%);
+}
